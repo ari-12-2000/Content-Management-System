@@ -31,7 +31,7 @@ const validateUpdatedUser = [
   check("email")
     .isEmail()
     .normalizeEmail({ gmail_remove_dots: true })
-    .withMessage("Email is invalid or already exists"),
+    .withMessage("Email is invalid "),
   check("number")
     .isNumeric()
     .isLength({ min: 10, max: 10 })
