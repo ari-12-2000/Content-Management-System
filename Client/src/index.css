@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width: 1279px) {
+    body {
+      font-size: 0.75rem;
+    }
+    .button{
+        padding:0 1em;
+        
+    }
+  }
