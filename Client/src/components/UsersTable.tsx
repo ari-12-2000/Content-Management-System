@@ -121,7 +121,7 @@ const UsersTable = ({ users, render, setRender }: Props) => {
                       index % 2 === 0 && "bg-gray-300"
                     } grid grid-cols-2 gap-x-1  before:font-bold  text-left sm:table-cell  sm:text-center sm:before:content-[''] sm:font-normal   px-4 py-2 `}
                   >
-                    {user.DateOfBirth}
+                    {user.DateOfBirth.slice(0, 10)}
                   </td>
                   <td
                     data-cell="Email"
@@ -189,3 +189,6 @@ const UsersTable = ({ users, render, setRender }: Props) => {
 
 export default UsersTable;
 //if one td is grid and rest of all tds have dispaly table-cell, then all tds will appear side by side in a row.If all tds are grid then they will appear in a stack
+
+
+
